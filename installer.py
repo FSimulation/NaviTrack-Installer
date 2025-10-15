@@ -7,7 +7,7 @@ import shutil, os, subprocess, threading
 class InstallerApp(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("myKaelys Client - Installer")
+        self.title("NaviTrack - Installer")
         self.geometry("400x220")
         self.resizable(False, False)
         ctk.set_appearance_mode("System")
@@ -15,16 +15,16 @@ class InstallerApp(ctk.CTk):
         self.custom_font = ctk.CTkFont(family="Poppins", size=18, weight="bold")
 
         # Paramètres de l'app
-        self.ZIP_URL = "https://github.com/FSimulation/Kaelys-Tracker/releases/download/public-latest/myKaelys.zip"
+        self.ZIP_URL = "https://github.com/FSimulation/Kaelys-Tracker/releases/download/public-latest/NaviTrack.zip"
         self.APP_DIR = "app-latest"
-        self.APP_EXE = os.path.join(self.APP_DIR, "myKaelys.exe")
-        self.TMP_ZIP = "myKaelys_tmp.zip"
+        self.APP_EXE = os.path.join(self.APP_DIR, "NaviTrack.exe")
+        self.TMP_ZIP = "NaviTrack_tmp.zip"
 
         self.setup_ui()
 
 
     def setup_ui(self):
-        self.label = ctk.CTkLabel(self, text="myKaelys Client - Installer", font=self.custom_font)
+        self.label = ctk.CTkLabel(self, text="NaviTrack - Installer", font=self.custom_font)
         self.label.pack(pady=20)
 
         self.info_label = ctk.CTkLabel(self, text="Click the button below to install/update the application.")

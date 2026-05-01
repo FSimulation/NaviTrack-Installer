@@ -1,1 +1,1 @@
-pyinstaller --onedir --windowed --name "NaviTrack-Installer" -add-data "src/static;src/static" --icon "src/static/ktrack.ico" launch.py
+pyinstaller --onedir --windowed --name "NaviTrack-Installer" --add-data "src/static;src/static" --icon "src/static/ktrack.ico" launch.py

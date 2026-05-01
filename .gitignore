@@ -1,4 +1,4 @@
 /dist
 /build
-/myKaelys
+/src/__pycache__
 installer.spec

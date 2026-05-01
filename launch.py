@@ -90,7 +90,7 @@ class InstallerApp(ctk.CTk):
         try:
             # Récupérer les infos de la dernière release depuis l'API GitHub
             latest_release = tools.get_latest_release()
-            self.version_label.configure(text=f"Latest version: {latest_release}")
+            self.version_label.configure(text=f"Latest version: {latest_release} \n Installation process may take a few minutes.")
         except Exception as e:
             self.version_label.configure(text=f"⚠️ Error fetching version: {e}")
 
